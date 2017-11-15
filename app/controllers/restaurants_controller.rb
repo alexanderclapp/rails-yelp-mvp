@@ -10,6 +10,8 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+    @review = Review.new
+    # we need `restaurant_id` to asssociate review with corresponding restaurant
   end
 
   # GET /restaurants/new

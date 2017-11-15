@@ -21,6 +21,9 @@
 </p>
 <!-- <%#= link_to 'Edit', edit_restaurant_path(@restaurant) %> | -->
 
+
+<%= render "reviews/form" %>
+
 <%= link_to 'Back', restaurants_path %>
 <%= link_to 'New Review', new_restaurant_review_path(@restaurant) %>
 <%= link_to 'Show all Reviews of this Restaurant', restaurant_review_path(@restaurant) %>
