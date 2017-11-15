@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<% @reviews.each do |review| %>
+
+  <p>
+    <%= "#{review.restaurant.name} Review" %>
+  </p>
+
+  <p>
+    <strong>Content:</strong>
+    <%= review.content %>
+  </p>
+
+  <p>
+    <strong>Rating:</strong>
+    <%= review.rating %>
+  </p>
+<% end %>
+<!-- <%#= link_to 'Edit', edit_restaurant_path(@restaurant) %> | -->
+
+<%= link_to 'Back', restaurant_path(@restaurant) %>
+<%= link_to 'New Review', new_restaurant_review_path(@restaurant) %>
+
